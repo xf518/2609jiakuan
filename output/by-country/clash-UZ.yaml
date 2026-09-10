@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - xiaohe
+- name: 🇺🇿 UZ 01 - xiaohe
   type: vless
-  server: 172.67.192.84
-  port: 2095
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  server: 189.74.97.47
+  port: 2087
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /juvsrnmgdu8i0179k5
+    path: /755276b33b6f
     headers:
-      Host: index.harmonica02.workers.dev
+      Host: 189.74.97.47
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇺🇿 UZ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - xiaohe
+  - 🇺🇿 UZ 01 - xiaohe
 rules:
 - MATCH,PROXIES
